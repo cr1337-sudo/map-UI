@@ -104,7 +104,7 @@ function App() {
     <div className="App">
       <ReactMapGL
         {...viewport}
-        mapboxApiAccessToken={process.env.REACT_APP_VERCEL_MAPBOX}
+        mapboxApiAccessToken={process.env.REACT_APP_MAPBOX}
         onViewportChange={(nextViewport) => setViewport(nextViewport)}
         mapStyle="mapbox://styles/cr1337/ckrr4awdf4ajz17pdvy6f9aae"
         onDblClick={handleAddClick}
