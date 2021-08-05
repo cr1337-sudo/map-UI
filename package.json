@@ -40,5 +40,6 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:8080/api"
+  "proxy": "https://map-api-cr1337.herokuapp.com/api"
+
 }
