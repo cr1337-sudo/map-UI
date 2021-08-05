@@ -11,6 +11,8 @@ import mapboxgl from 'mapbox-gl';
 import { useEffect } from "react";
 import { format } from "timeago.js";
 import axios from "axios";
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 function App() {
   //Local storage
