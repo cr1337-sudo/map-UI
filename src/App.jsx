@@ -4,6 +4,10 @@ import Login from "./components/Login";
 import { useState } from "react";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import { Room, Star } from "@material-ui/icons";
+//Pdocution fix
+import 'mapbox-gl/dist/mapbox-gl.css';
+import mapboxgl from 'mapbox-gl';
+////////
 import { useEffect } from "react";
 import { format } from "timeago.js";
 import axios from "axios";
