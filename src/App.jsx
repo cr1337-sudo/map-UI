@@ -40,7 +40,7 @@ function App() {
   useEffect(() => {
     const getPins = async () => {
       try {
-        const res = await fetch("/pins");
+        const res = await fetch("https://map-api-cr1337.herokuapp.com/api/pins");
         const data = await res.json();
         setPins(data);
       } catch (e) {
@@ -87,7 +87,7 @@ function App() {
     });
 
     try {
-      const res = await axios.post("/pins", newPin);
+      const res = await axios.post("https://map-api-cr1337.herokuapp.com/api/pins", newPin);
       setPins([...pins, res.data]);
       setNewPlace(null);
     } catch {
