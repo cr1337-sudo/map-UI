@@ -15,7 +15,7 @@ const Login = ({ setShowLogin, myStorage, setCurrentUser }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("/user/login", data);
+      const res = await axios.post("https://map-api-cr1337.herokuapp.com/api/user/login", data);
       myStorage.setItem("user", res.data.user.username);
       setCurrentUser(myStorage.getItem("user"));
       setShowLogin(false);
