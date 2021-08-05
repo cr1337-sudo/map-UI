@@ -23,7 +23,7 @@ const Register = ({ setShowRegister }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("/user/register", data);
+      const res = await axios.post("https://map-api-cr1337.herokuapp.com/api/user/register", data);
       setSuccess(true);
       setError(false);
     } catch {
